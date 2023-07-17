@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import "./Contact.css";
 import { useAlert } from "react-alert";
 import axios from "axios";
-import profile from "../../../images/Profile.png";
+import profile from "../../../images/Profile.webp";
 import MetaData from "../MetaData";
 
 const Contact = () => {

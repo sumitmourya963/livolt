@@ -11,9 +11,7 @@ const errorMiddleware = require("./middleware/error");
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
-app.use(
-  require("prerender-node").set("prerenderToken", "thlxB1l4gawnP6yRu8Ku")
-);
+
 app.use(
   express.json({
     limit: "50mb",

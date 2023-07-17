@@ -2,8 +2,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Carosel.css";
 import { Carousel } from "react-responsive-carousel";
-import Lithium_battery_carousel from "../../../src/images/Lithium_battery_carousel.jpg";
-import solar_energy_carousel from "../../../src/images/solar_panel_carousel.jpg";
+import Lithium_battery_carousel from "../../../src/images/Lithium_battery_carousel.webp";
+import solar_energy_carousel from "../../../src/images/solar_panel_carousel.webp";
 
 const Carosel1 = () => {
   return (

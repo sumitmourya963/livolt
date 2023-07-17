@@ -17,6 +17,7 @@ const options = {
   postion: positions.BOTTOM_CENTER,
   transitions: transitions.SCALE,
 };
+
 root.render(
   <Provider store={store}>
     <AlertProvider template={AlertTemplate} {...options}>

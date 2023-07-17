@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import livolt_logo from "../../../images/livolt-logo.png";
+import livolt_logo from "../../../images/livolt-logo.webp";
 import SearchIcon from "@mui/icons-material/Search";
 import { useDispatch, useSelector } from "react-redux";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";

@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import "./aboutSection.css";
-import Livolt_environment from "../../../images/Livolt_environment.png";
-import Livolt_battery from "../../../images/Livolt_battery.jpg";
-import light_bulb from "../../../images/light_bulb.jpg";
+import Livolt_battery from "../../../images/Livolt_battery.webp";
+import light_bulb from "../../../images/light_bulb.webp";
 import MetaData from "../MetaData";
 
 const About = () => {

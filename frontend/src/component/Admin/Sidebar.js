@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import logo from "../../images/livolt-logo.png";
+import logo from "../../images/livolt-logo.webp";
 import { Link } from "react-router-dom";
 import { TreeView, TreeItem } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";

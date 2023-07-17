@@ -18,7 +18,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import { useNavigate } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginIcon from "@mui/icons-material/Login";
-import Livolt_logo from "../../../images/livolt-logo.png";
+import Livolt_logo from "../../../images/livolt-logo.webp";
 
 export default function TemporaryDrawer() {
   const navigate = useNavigate();

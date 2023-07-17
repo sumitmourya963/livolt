@@ -174,7 +174,7 @@
 
 /* solar consulation */
 .solar-consultation-container {
-  background-image: url("../../images/solar-consultation.jpg");
+  background-image: url("../../images/solar-consultation.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,7 +191,7 @@
 }
 /* battery banner conatainer */
 .battery-banner-container {
-  background-image: url("../../images/Livolt_battery.jpg");
+  background-image: url("../../images/Livolt_battery.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

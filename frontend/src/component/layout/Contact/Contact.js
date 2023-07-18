@@ -122,7 +122,7 @@ const Contact = () => {
         </form>
         <div className="people">
           <div>
-            <img src={profile} alt="" />
+            <img src={profile} alt="sumit mourya profile" />
             <p>
               <span>Sumit Mourya</span>Founding member
               <br />
@@ -131,7 +131,7 @@ const Contact = () => {
             </p>
           </div>
           <div>
-            <img src={profile} alt="" />
+            <img src={profile} alt="saurabh mourya profile" />
             <p>
               <span>Saurabh Mourya</span>Founding member
               <br />

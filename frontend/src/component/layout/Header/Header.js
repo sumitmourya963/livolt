@@ -75,7 +75,7 @@ const Header = () => {
           <img
             className="livolt-logo-main"
             src={livolt_logo}
-            alt="livolt-logo"
+            alt="livolt Energy logo"
           />
           <div className="navigation-button">
             <div onClick={home}>Home</div>

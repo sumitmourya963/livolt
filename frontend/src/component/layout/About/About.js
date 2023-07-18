@@ -26,11 +26,11 @@ const About = () => {
             get the most out of their solar energy and lithium-ion battery
             systems.
           </p>
-          <img src={Livolt_battery} alt="wind mill images" />
+          <img src={Livolt_battery} alt="lithium battery" />
         </div>
         <div className="header-container1">
           <h1 className="header-vision">Our Vision</h1>
-          <img src={light_bulb} alt="wind mill images" />
+          <img src={light_bulb} alt="renewable energy" />
           <div>
             <p className="about-para">
               Our vision is to be the leading provider of solar energy and
@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <div className="header-container1 reverse">
           <h1 className="our-mission-header">Our Mission</h1>
-          <img src={Livolt_battery} alt="wind mill" />
+          <img src={Livolt_battery} alt="lithium battery" />
           <div className="our-mission-container">
             <p>
               Our mission is to provide our customers with the best possible

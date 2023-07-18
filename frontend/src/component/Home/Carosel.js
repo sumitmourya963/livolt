@@ -15,10 +15,18 @@ const Carosel1 = () => {
           <h1 className="call-to-action-carosel">Lighten</h1>
           <h1 className="call-to-action-carosel"> Your Bills!</h1>
         </div>
-        <img className="carosel-img" src={solar_energy_carousel} />
+        <img
+          className="carosel-img"
+          src={solar_energy_carousel}
+          alt="solar energy"
+        />
       </div>
       <div>
-        <img className="carosel-img" src={Lithium_battery_carousel} />
+        <img
+          className="carosel-img"
+          src={Lithium_battery_carousel}
+          alt="lithium battery"
+        />
       </div>
     </Carousel>
   );

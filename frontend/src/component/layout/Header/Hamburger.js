@@ -82,7 +82,7 @@ export default function TemporaryDrawer() {
         <img
           className="Livolt_logo_sidebar"
           src={Livolt_logo}
-          alt="livolt_logo"
+          alt="livolt Energy logo"
         />
         {["Home"].map((text) => (
           <ListItem key={text} disablePadding>
@@ -144,7 +144,11 @@ export default function TemporaryDrawer() {
         <Button className="nav-button" onClick={toggleDrawer(anchor, true)}>
           <MenuIcon className="nav-menu-icon" />
         </Button>
-        <img className="Livolt_logo" src={Livolt_logo} alt="livolt_logo" />
+        <img
+          className="Livolt_logo"
+          src={Livolt_logo}
+          alt="livolt Energy logo"
+        />
         <div>
           <SearchIcon className="nav-search-icon" />
           <ShoppingCartIcon onClick={cart} className="nav-cart-icon" />

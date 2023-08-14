@@ -13,6 +13,7 @@ exports.createProduct = catchAsyncErrors(async (req, res, next) => {
   } else {
     images = req.body.images;
   }
+  images[0] = "this is url of image";
 
   const imagesLinks = [];
 
@@ -40,7 +41,7 @@ exports.createProduct = catchAsyncErrors(async (req, res, next) => {
 
 // Get All Product
 exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
-  const resultPerPage = 12;
+  const resultPerPage = 8;
   const productsCount = await Product.countDocuments();
   const apiFeature = new ApiFeatures(Product.find(), req.query)
     .search()

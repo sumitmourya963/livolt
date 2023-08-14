@@ -3,13 +3,13 @@ import Sidebar from "./Sidebar.js";
 import "./dashboard.css";
 import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
+
 import { Doughnut, Line } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
 import { getAdminProduct } from "../../actions/productAction";
 import { getAllOrders } from "../../actions/orderAction.js";
 import { getAllUsers } from "../../actions/userAction.js";
 import MetaData from "../layout/MetaData";
-import Chart from "chart.js/auto";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -52,7 +52,13 @@ const Dashboard = () => {
       },
     ],
   };
-
+  const lineOptions = {
+    scales: {
+      x: {
+        type: "category", // Set x-axis as a category scale
+      },
+    },
+  };
   const doughnutState = {
     labels: ["Out of Stock", "InStock"],
     datasets: [
@@ -95,11 +101,11 @@ const Dashboard = () => {
         </div>
 
         <div className="lineChart">
-          <Line data={lineState} />
+          {/* <Line data={lineState} options={lineOptions} /> */}
         </div>
 
         <div className="doughnutChart">
-          <Doughnut data={doughnutState} />
+          {/* <Doughnut data={doughnutState} /> */}
         </div>
       </div>
     </div>

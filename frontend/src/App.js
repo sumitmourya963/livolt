@@ -42,6 +42,11 @@ import ProductReviews from "./component/Admin/ProductReviews.js";
 import Contact from "./component/layout/Contact/Contact.js";
 import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound.js";
+import WriteBlogPost from "./component/Admin/WriteBlogPost.js";
+import Blogs from "./component/Blogs/Blogs.js";
+import BlogDetails from "./component/Blogs/BlogDetails";
+import AdminBlogs from "./component/Admin/AdminBlogs";
+import UpdateBlog from "./component/Admin/UpdateBlog.js";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -61,7 +66,7 @@ function App() {
       },
     });
     store.dispatch(loadUser());
-    getStripeApiKey();
+    // getStripeApiKey();
   }, []);
 
   return (
@@ -85,6 +90,8 @@ function App() {
         <Route exact path="/search" element={<Search />} />
         <Route exact path="/login" element={<LoginSignUp />} />
         <Route exact path="/password/forgot" element={<ForgotPassword />} />
+        <Route exact path="/blogs" element={<Blogs />} />
+        <Route exact path="/blogs/:id" element={<BlogDetails />} />
 
         <Route
           exact
@@ -121,6 +128,9 @@ function App() {
           <Route exact path="/admin/user/:id" element={<UpdateUser />} />
           <Route exact path="/admin/order/:id" element={<ProcessOrder />} />
           <Route exact path="/admin/product/:id" element={<UpdateProduct />} />
+          <Route exact path="/admin/blog" element={<WriteBlogPost />} />
+          <Route exact path="/admin/blogs" element={<AdminBlogs />} />
+          <Route exact path="/admin/update-blog/:id" element={<UpdateBlog />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

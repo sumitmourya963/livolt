@@ -39,6 +39,22 @@ const Hamburger = () => {
           </TreeItem>
         </TreeView>
       </Link>
+      <Link>
+        <TreeView
+          defaultCollapseIcon={<ExpandMoreIcon />}
+          defaultExpandIcon={<ImportExportIcon />}
+        >
+          <TreeItem nodeId="1" label="Blogs">
+            <Link to="/admin/blogs">
+              <TreeItem nodeId="2" label="All" icon={<PostAddIcon />} />
+            </Link>
+
+            <Link to="/admin/blog">
+              <TreeItem nodeId="3" label="Create" icon={<AddIcon />} />
+            </Link>
+          </TreeItem>
+        </TreeView>
+      </Link>
       <Link to="/admin/orders">
         <p>
           <ListAltIcon />
@@ -54,6 +70,12 @@ const Hamburger = () => {
         <p>
           <RateReviewIcon />
           Reviews
+        </p>
+      </Link>
+      <Link to="/admin/write-blog-post">
+        <p>
+          <RateReviewIcon />
+          Create Blog
         </p>
       </Link>
     </div>

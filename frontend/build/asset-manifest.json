@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8db68376.css",
-    "main.js": "/static/js/main.1003f0bd.js",
+    "main.css": "/static/css/main.eefcf6c2.css",
+    "main.js": "/static/js/main.069fe985.js",
     "static/media/light_bulb.webp": "/static/media/light_bulb.d39ee627d19ccc4b6158.webp",
     "static/media/solar-consultation.webp": "/static/media/solar-consultation.55b5a93cf1f466d0a785.webp",
     "static/media/solar_panel_carousel.webp": "/static/media/solar_panel_carousel.7c28a6bb1afc89eff566.webp",
@@ -17,11 +17,11 @@
     "static/media/Profile.webp": "/static/media/Profile.d3eb24a00fc20054a746.webp",
     "static/media/livolt-logo.webp": "/static/media/livolt-logo.2b9c7598f3442f31e996.webp",
     "index.html": "/index.html",
-    "main.8db68376.css.map": "/static/css/main.8db68376.css.map",
-    "main.1003f0bd.js.map": "/static/js/main.1003f0bd.js.map"
+    "main.eefcf6c2.css.map": "/static/css/main.eefcf6c2.css.map",
+    "main.069fe985.js.map": "/static/js/main.069fe985.js.map"
   },
   "entrypoints": [
-    "static/css/main.8db68376.css",
-    "static/js/main.1003f0bd.js"
+    "static/css/main.eefcf6c2.css",
+    "static/js/main.069fe985.js"
   ]
 }

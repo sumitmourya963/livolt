@@ -48,6 +48,7 @@ const payment = require("./routes/paymentRoute");
 const form = require("./routes/formRoute");
 const contactForm = require("./routes/contactFormRoute");
 const newsletter = require("./routes/newsLetterRoute");
+const blog = require("./routes/blogRoute");
 
 app.use("/api/v1", product);
 app.use("/api/v1", user);
@@ -56,6 +57,7 @@ app.use("/api/v1", payment);
 app.use("/api/v1", form);
 app.use("/api/v1", contactForm);
 app.use("/api/v1", newsletter);
+app.use("/api/v1/", blog);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 

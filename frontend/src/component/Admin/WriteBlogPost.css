@@ -1,0 +1,74 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.create-blog-form > h1 {
+  margin: 30px;
+  color: grey;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+}
+
+.create-blog-form {
+  background-color: white;
+  border: 1px solid rgb(63, 121, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-author-name,
+.blog-title,
+.blog-description {
+  width: 80%;
+  margin: 10px 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+
+.blog-date,
+.read-Time {
+  width: 36.5%;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid grey;
+  justify-content: space-around;
+}
+.blog-date {
+  margin-left: 20px;
+}
+.read-Time {
+  margin-left: 4%;
+}
+
+.preview-image {
+  width: 230px;
+  height: 130px;
+  margin: 20px;
+}
+
+#create-blog-btn {
+  color: white;
+  background-color: rgb(8, 184, 90);
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+  align-self: center;
+  margin: 50px;
+}

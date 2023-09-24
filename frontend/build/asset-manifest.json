@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c54c37fe.css",
+    "main.js": "/static/js/main.282b2461.js",
+    "static/media/light_bulb.webp": "/static/media/light_bulb.d39ee627d19ccc4b6158.webp",
+    "static/media/solar-consultation.webp": "/static/media/solar-consultation.55b5a93cf1f466d0a785.webp",
+    "static/media/calculator_background_image.jpeg": "/static/media/calculator_background_image.1d888900ff6cea9d717b.jpeg",
+    "static/media/solar_panel_carousel.webp": "/static/media/solar_panel_carousel.7c28a6bb1afc89eff566.webp",
+    "static/media/ROI.png": "/static/media/ROI.7f7b2ef6a9a65f969cc8.png",
+    "static/media/tree_wbg.png": "/static/media/tree_wbg.6910383c91298bbab103.png",
+    "static/media/cost.png": "/static/media/cost.b771fa9f12bd382137d6.png",
+    "static/media/car_cancle.png": "/static/media/car_cancle.015fda43769caf759ec8.png",
+    "static/media/saving.png": "/static/media/saving.c8b2278265925696c3f0.png",
+    "static/media/Livolt_battery.webp": "/static/media/Livolt_battery.0175706344ff3a67c398.webp",
+    "static/media/solar_calculator.png": "/static/media/solar_calculator.e3f7a4bf68700cb2e6e9.png",
+    "static/media/Lithium_battery_carousel.webp": "/static/media/Lithium_battery_carousel.68ac3d4446e067f1184c.webp",
+    "static/media/solar_stand.webp": "/static/media/solar_stand.fea4fa1bfe6944f5c7fb.webp",
+    "static/media/reapgain_calpage.png": "/static/media/reapgain_calpage.f2b6234948f2c5f7e923.png",
+    "static/media/solar_inverter.webp": "/static/media/solar_inverter.b7cadfba6657b9f9bac5.webp",
+    "static/media/blogimg.png": "/static/media/blogimg.71744acf47c2530e9790.png",
+    "static/media/lithium_battery.webp": "/static/media/lithium_battery.a475d7c91dc02764d500.webp",
+    "static/media/solar_panel.webp": "/static/media/solar_panel.cd3ed5d9b557e8a67661.webp",
+    "static/media/banner.webp": "/static/media/banner.6e43e483754d36f696aa.webp",
+    "static/media/home_calpage.png": "/static/media/home_calpage.5d4e1703c9ada38ef44f.png",
+    "static/media/solar_wire.webp": "/static/media/solar_wire.5a8b16aa2bf5c824d152.webp",
+    "static/media/calculator_calpage.png": "/static/media/calculator_calpage.ec31a935e6d0e032c8fc.png",
+    "static/media/charge_controller.webp": "/static/media/charge_controller.01d4bff577cc8b71b71d.webp",
+    "static/media/Profile.webp": "/static/media/Profile.d3eb24a00fc20054a746.webp",
+    "static/media/livolt-logo.webp": "/static/media/livolt-logo.2b9c7598f3442f31e996.webp",
+    "index.html": "/index.html",
+    "main.c54c37fe.css.map": "/static/css/main.c54c37fe.css.map",
+    "main.282b2461.js.map": "/static/js/main.282b2461.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c54c37fe.css",
+    "static/js/main.282b2461.js"
+  ]
+}

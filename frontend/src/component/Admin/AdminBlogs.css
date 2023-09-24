@@ -1,0 +1,133 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs-main-container {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: space-between;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.admin-author-name {
+  color: rgb(122, 124, 118);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 740px;
+}
+.preview-icon,
+.edit-icon,
+.delete-icon {
+  margin-right: 20px;
+  margin-top: -15px;
+}
+.preview-icon:hover {
+  color: rgb(76, 152, 76);
+}
+.edit-icon:hover {
+  color: rgb(76, 152, 76);
+}
+.delete-icon:hover {
+  color: rgb(76, 152, 76);
+}
+.author-name span {
+  color: green;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(39, 36, 36);
+  margin-bottom: 6px;
+  text-align: justify;
+  margin-left: 15px;
+}
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(122, 124, 118);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 15px;
+  text-align: justify;
+}
+.date {
+  color: rgb(103, 81, 81);
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.read-time {
+  color: rgb(103, 81, 81);
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.blog-info-container div {
+  display: flex;
+  margin-top: 10px;
+}
+.image {
+  width: 230px;
+  height: 150px;
+  margin-left: 50px;
+}
+.blogs-main-container:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .blogs-main-container{
+    width: 350px;
+  }
+  .image{
+    width: 100px;
+    height: 70px;
+    margin-left: 15px;
+  }
+  .admin-author-name {
+ 
+    margin-bottom: 6px;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+    width: 200px;
+  }
+  .title{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+  .description {
+    display: none;
+  }
+  .date {
+    font-size: 0.7rem;
+  }
+  .read-time {
+    font-size: 0.7rem;
+  }
+  .blog-info-container div {
+    display: flex;
+    margin-top: 5px;
+  }
+  .preview-icon,
+  .edit-icon,
+  .delete-icon {
+  margin-right: 4px;
+}
+
+
+}

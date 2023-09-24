@@ -1,0 +1,84 @@
+.consultation-from {
+  width: 600px;
+  height: 350px;
+  background-color: whitesmoke;
+  margin-top: 60px;
+  border-style: none;
+  border-radius: 10px;
+}
+.consultation-input {
+  margin-top: 30px;
+}
+.form-element {
+  display: inline-block;
+}
+.form-element > input {
+  width: 230px;
+  display: inline-block;
+  font-size: 1rem;
+  color: grey;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  border-radius: 10px;
+  outline: none;
+  border-color: rgb(8, 184, 90);
+}
+.avgBill > input {
+  width: 525px;
+}
+.consultation-input > button {
+  width: 250px;
+  height: auto;
+  padding: 15px;
+  background-color: rgb(8, 184, 90);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  align-content: flex-end;
+  font-size: 1.1rem;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+
+/* Form Media Query */
+@media screen and (max-width: 600px) {
+  .consultation-from {
+    width: 350px;
+    height: 250px;
+
+    margin-top: 15px;
+  }
+  .consultation-input {
+    margin-top: 15px;
+  }
+  .form-element > input {
+    width: 130px;
+
+    font-size: 0.8rem;
+    color: grey;
+    padding: 8px;
+
+    margin: 12px;
+    border-radius: 10px;
+    border-color: rgb(8, 184, 90);
+  }
+  .avgBill > input {
+    width: 304px;
+  }
+  .consultation-input > button {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(8, 184, 90);
+    font-size: 0.8rem;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  .consultation-input > button {
+    width: 100px;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+}

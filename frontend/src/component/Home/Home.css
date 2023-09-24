@@ -1,0 +1,268 @@
+.banner {
+  background-color: rgb(96, 88, 76);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner > h1 {
+  margin: 5vmax;
+
+  font: 600 2.5vmax "Roboto";
+}
+
+.banner > p {
+  font: 300 1.4vmax "Lucida Sans";
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 68%;
+  padding: 1vmax;
+  margin: 2vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: rgb(205, 32, 32);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
+
+/* category */
+.category-main-container {
+  display: flex;
+  margin: 50px 10%;
+  justify-content: space-between;
+  overflow:auto;
+  
+}
+.category-main-container > a {
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgb(89, 89, 89);
+}
+.category-main-container > a:hover {
+  color: rgb(8, 184, 90);
+  transition: all 0.6s;
+}
+.category-container {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(183, 177, 177, 0.1);
+  border-radius: 50%;
+  padding: 25px;
+  margin: 20px;
+}
+.category-container > img {
+  width: 130px;
+  height: 130px;
+}
+.category-container > img:hover {
+  width: 140px;
+  height: 140px;
+  transition: all 0.6s;
+}
+
+/* solar consulation */
+.solar-consultation-container {
+  background-image: url("../../images/solar-consultation.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  color: #ffffff;
+  font-size: large;
+  display: flex;
+  justify-content: space-around;
+}
+.call-to-action {
+  margin-top: 150px;
+  font-size: 30px;
+}
+/* battery banner conatainer */
+.battery-banner-container {
+  background-image: url("../../images/Livolt_battery.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  color: rgb(252, 252, 255);
+  font-size: large;
+  display: flex;
+  justify-content: space-around;
+}
+/* carousal image */
+.call-to-action-container {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin-top: 20%;
+  text-align: center;
+}
+.call-to-action-carosel {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-weight: 800;
+}
+/* Media query */
+
+@media screen and (max-width: 600px) {
+  /* Category Container media query*/
+  .category-main-container {
+    margin: 20px 5%;
+    margin-bottom: 35px;
+  }
+  .category-main-container > a {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .category-container {
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    margin: 15px;
+    margin-left: 0;
+  }
+  .category-container > img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Form media Query */
+  .solar-consultation-container {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .call-to-action {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .call-to-action-container {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    margin-top: 13%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .call-to-action-carosel {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}

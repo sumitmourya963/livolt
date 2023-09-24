@@ -1,0 +1,241 @@
+
+.background-image-container{
+  background-image: url("../../../images/calculator_background_image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 30vh;
+  text-align:center;
+  padding-top: 50px;
+  color: white;
+}
+.calculator-container{
+  height: 280vh;
+  width: 80%;
+  z-index: 5;
+  margin-top: -100px;
+  background-color: white;
+  margin-left: 10%;
+  box-shadow: 0 0 20px 2px #bfbcbc;
+}
+.main-calculator-cantainer{
+  padding: 100px  250px;
+}
+.input-location,
+.input-monthly-bill{
+  width: 100%;
+  display: block;
+  margin-bottom:20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 4px 1px #bfbcbc;
+}
+.option-btns{
+  display: flex;
+  justify-content: space-between;
+
+}
+.option-btn{
+  padding:10px 40px;
+  background-color: rgb(156, 146, 146);
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+}
+.select-para{
+   font-size: 1rem;
+   color: rgb(50, 49, 49);
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 15px;
+}
+.calculate-btn{
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 100px;
+  margin-top: 30px;
+  margin-left: 30%;
+}
+.your-solar-journey-container{
+  text-align: center;
+}
+.your-solar-journey-container>h1{
+  color: gray;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.journey-main-container{
+   display: flex;
+   justify-content: space-evenly;
+}
+.journey-main-container>div{
+  width: 160px;
+  height: 200px;
+}
+.journey-main-container>div>p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   margin: 10px;
+   color: grey;
+}
+.journey-main-container>div>h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 10px;
+  color: grey;
+}
+.journey-main-container>div>img{
+  width: 100px;
+  height: 100px;
+  padding: 40px;
+  background-color: rgb(70, 69, 69);
+  border-radius: 50%;
+
+}
+
+
+.solar-system-size-circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 2px #bfbcbc;
+  text-align: center;
+  margin: 10px auto;
+}
+.size{
+ justify-self: center;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+.solar-system-size-para{
+  color: #627474;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px auto;
+  text-align: center;
+}
+.area-required-para{
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 10px auto;
+  text-align: center;
+  text-align: center;
+}
+.net-metering-para{
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-left: 20px;
+  text-align: center;
+}
+.main-div-solar-system-size,
+.enviornment-effect-container{
+  width: 350px;
+  height: 250px;
+  margin: 50px auto;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  border: 1px solid black;
+
+}
+
+.unit{
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.coin-img-cont-1{
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  margin-left:40px ;
+}
+.coin-img-cont-2{
+   display: flex;
+   flex-direction: column;
+   width: 70px;
+   margin-top: 50px;
+   margin-left: 30px;
+}
+.coin-container{
+  display: flex;
+  flex-direction: row;
+}
+.without-solar,
+.with-solar{
+  color: gray;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:10px ;
+  text-align: center;
+}
+.coin-saving{
+  color: gray;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+ 
+ 
+}
+.coin-saving>span{
+  color: rgb(217, 179, 26);
+}
+
+
+  /* impact on the environment */
+  .environment-effect-headline{
+    color: #627474;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .enviornment-effect-container > div {
+    display: flex;
+  }
+  
+  .enviornment-effect-container > div > img{
+    width: 80px;
+    height: 70px;
+  }
+
+
+  /* main div */
+  .main-div-calculator{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .cal-heading,.cost{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 1rem;
+    color: gray;
+  }
+  .calculate-cont > img{
+     width: 60px;
+     height: 60px;
+     margin: 20px 5px;
+  }
+  .benefits-container{
+    display: flex;
+    padding: 30px;
+  }
+  
+
+

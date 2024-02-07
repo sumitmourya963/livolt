@@ -10,7 +10,7 @@ import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
-
+import { useLocation } from "react-router-dom";
 const categories = [
   "Li-ion Battery",
   "Li-phosphate Battery",
@@ -28,6 +28,7 @@ const Products = () => {
   const dispatch = useDispatch();
   const alert = useAlert();
   const params = useParams();
+  const { pathname } = useLocation();
   const [currentPage, setCurrentPage] = useState(1);
   const [price, setPrice] = useState([0, 500000]);
   const [category, setCategory] = useState("");
@@ -50,12 +51,23 @@ const Products = () => {
     setPrice(newPrice);
   };
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
     dispatch(getProduct(keyword, currentPage, price, category, ratings));
-  }, [dispatch, error, alert, keyword, currentPage, price, category, ratings]);
+  }, [
+    dispatch,
+    error,
+    alert,
+    keyword,
+    currentPage,
+    price,
+    category,
+    ratings,
+    pathname,
+  ]);
 
   return (
     <Fragment>

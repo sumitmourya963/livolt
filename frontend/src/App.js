@@ -48,10 +48,10 @@ import BlogDetails from "./component/Blogs/BlogDetails";
 import AdminBlogs from "./component/Admin/AdminBlogs";
 import UpdateBlog from "./component/Admin/UpdateBlog.js";
 import SolarCalculator from "./component/layout/Calculator/SolarCalculator";
+import FAQ from "./component/layout/FAQ/FAQ";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
-
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {
@@ -59,6 +59,8 @@ function App() {
 
     setStripeApiKey(data.stripeApiKey);
   }
+
+  const isLoginPage = window.location.pathname === "/login";
 
   useEffect(() => {
     WebFont.load({
@@ -72,7 +74,7 @@ function App() {
 
   return (
     <Router>
-      <Header />
+      {!isLoginPage && <Header />}
       {isAuthenticated && <UserOptions user={user} />}
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
@@ -94,6 +96,7 @@ function App() {
         <Route exact path="/blogs" element={<Blogs />} />
         <Route exact path="/blogs/:id" element={<BlogDetails />} />
         <Route exact path="/solar-calculator" element={<SolarCalculator />} />
+        <Route exact path="/frequently-asked-question" element={<FAQ />} />
 
         <Route
           exact

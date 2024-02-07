@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import { Rating } from "@material-ui/lab";
 
 const ProductCard = ({ product }) => {
+  //formatter for formatting the price
+
+  const formatPrice = (price) => {
+    const formatter = new Intl.NumberFormat("en-IN"); // Using 'en-IN' for Indian number formatting
+
+    return `${formatter.format(price)}`;
+  };
+
   const options = {
     value: product.ratings,
     readOnly: true,
@@ -19,7 +27,7 @@ const ProductCard = ({ product }) => {
           ({product.numOfReviews} Reviews)
         </span>
       </div>
-      <span>{`₹${product.price}`}</span>
+      <span>{`₹${formatPrice(product.price)}`}</span>
     </Link>
   );
 };

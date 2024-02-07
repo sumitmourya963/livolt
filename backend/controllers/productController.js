@@ -13,7 +13,6 @@ exports.createProduct = catchAsyncErrors(async (req, res, next) => {
   } else {
     images = req.body.images;
   }
-  images[0] = "this is url of image";
 
   const imagesLinks = [];
 

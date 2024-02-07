@@ -3,6 +3,7 @@ import livolt_logo from "../../../images/livolt-logo.webp";
 import SearchIcon from "@mui/icons-material/Search";
 import { useDispatch, useSelector } from "react-redux";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Badge from "@mui/material/Badge";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../../actions/userAction";
 import { useAlert } from "react-alert";
@@ -33,6 +34,12 @@ const Header = () => {
     } else {
       navigate("/products");
     }
+  };
+
+  // for setting the background color of cart badge
+
+  const badgeStyle = {
+    backgroundColor: "green", // Set your desired background color here
   };
 
   function home() {
@@ -94,13 +101,22 @@ const Header = () => {
             </button>
           </div>
           <div className="cart-login">
-            <ShoppingCartIcon
+            <Badge
               className="cart-icon"
-              onClick={cart}
+              badgeContent={cartItems.length}
               style={{
-                color: cartItems.length > 0 ? "rgb(8,184,90)" : "rgb(8,184,90)",
+                color: { badgeStyle },
               }}
-            />
+            >
+              <ShoppingCartIcon
+                onClick={cart}
+                style={{
+                  color:
+                    cartItems.length > 0 ? "rgb(8,184,90)" : "rgb(8,184,90)",
+                }}
+              />
+            </Badge>
+
             {!user ? (
               <button onClick={login}>Login</button>
             ) : (

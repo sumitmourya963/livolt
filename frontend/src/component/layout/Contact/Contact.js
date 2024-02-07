@@ -1,11 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./Contact.css";
 import { useAlert } from "react-alert";
 import axios from "axios";
 import profile from "../../../images/Profile.webp";
 import MetaData from "../MetaData";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+  const { pathname } = useLocation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -36,6 +39,10 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Fragment>
       <MetaData title={`Contact Us | LiVolt`} />
@@ -45,10 +52,12 @@ const Contact = () => {
       </section>
       <section id="contact-details" className="section-p1">
         <div className="details">
-          <span>GET IN TOUCH</span>
-          <h2>Visit one of our agency locations or contact us today</h2>
-          <h3>Head office</h3>
-          <div>
+          <span className="contact-header-1">GET IN TOUCH</span>
+          <h2 className="contact-header-2">
+            Visit one of our agency locations or contact us today
+          </h2>
+          <h3 className="contact-header-3">Head office</h3>
+          <div className="contact-header-4">
             <li>
               <i className="fa fa-map" />
               <p>
@@ -58,7 +67,7 @@ const Contact = () => {
             </li>
             <li>
               <i className="fa fa-envelope" />
-              <p>Email: livolt.in</p>
+              <p>Email: livoltenergy18@gmail.com</p>
             </li>
             <li>
               <i className="fa-solid fa-address-card" />
@@ -66,13 +75,13 @@ const Contact = () => {
             </li>
             <li>
               <i className="fa fa-clock" />
-              <p>Mon-Sat,9.00am-9.00pm</p>
+              <p className="contact-header-4">Mon-Sat,9.00am-7.00pm</p>
             </li>
           </div>
         </div>
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.334896530934!2d72.76044261526233!3d19.69836113723229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71ce12c4fdc29%3A0x118597d38a5fb980!2sshakti%20batteries%20and%20inverters!5e0!3m2!1sen!2sin!4v1677589929673!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30050.63824400988!2d72.76282250000001!3d19.6985791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71d7799d80da5%3A0x316eaba0006c3c96!2sLivolt%20Energy!5e0!3m2!1sen!2sin!4v1706864624057!5m2!1sen!2sin"
             width={600}
             height={450}
             style={{ border: 0 }}

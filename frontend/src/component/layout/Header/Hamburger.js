@@ -27,6 +27,7 @@ export default function TemporaryDrawer() {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.user);
   const [keyword, setKeyword] = useState("");
+  const [searchIconClicked, setSearchIconClicked] = useState(false);
 
   const [state, setState] = React.useState({
     top: false,
@@ -180,7 +181,10 @@ export default function TemporaryDrawer() {
           alt="livolt Energy logo"
         />
         <div>
-          <SearchIcon className="nav-search-icon" />
+          <SearchIcon
+            className="nav-search-icon"
+            onClick={() => setSearchIconClicked((prev) => !prev)}
+          />
           <ShoppingCartIcon onClick={cart} className="nav-cart-icon" />
           {!user ? (
             <LoginIcon onClick={login} className="nav-login-icon" />
@@ -201,7 +205,7 @@ export default function TemporaryDrawer() {
           {list(anchor)}
         </Drawer>
       </div>
-      <div className="search-bar">
+      <div className={searchIconClicked ? "search-bar" : "search-bar-none"}>
         <input
           type="text"
           placeholder="Search a Product ..."

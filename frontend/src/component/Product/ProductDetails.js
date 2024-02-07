@@ -51,6 +51,14 @@ const ProductDetails = () => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
 
+  //Formatter for formatting the price in indian format
+
+  const formatPrice = (price) => {
+    const formatter = new Intl.NumberFormat("en-IN"); // Using 'en-IN' for Indian number formatting
+
+    return `${formatter.format(price)}`;
+  };
+
   const increaseQuantity = () => {
     if (product.Stock <= quantity) return;
 
@@ -140,7 +148,7 @@ const ProductDetails = () => {
                 </span>
               </div>
               <div className="detailsBlock-3">
-                <h1>{`₹${product.price}`}</h1>
+                <h1>{`₹${formatPrice(product.price)}`}</h1>
                 <div className="detailsBlock-3-1">
                   <div className="detailsBlock-3-1-1">
                     <button onClick={decreaseQuantity}>-</button>

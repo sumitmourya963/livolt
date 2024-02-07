@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import { useNavigate } from "react-router-dom";
 import {
@@ -40,10 +40,13 @@ const Footer = () => {
   function contact() {
     navigate("/contact");
   }
+  function solarCalculator() {
+    navigate("/solar-calculator");
+  }
 
   //Footer Menu - Footer
   function learn() {
-    navigate("/learn");
+    navigate("/blogs");
   }
   function certificates() {
     navigate("/certificates");
@@ -75,11 +78,14 @@ const Footer = () => {
           <a onClick={contact}>
             <span>Contact</span>
           </a>
+          <a onClick={solarCalculator}>
+            <span>Calculator</span>
+          </a>
         </div>
         <div className="footer-menu">
           <span>Footer Menu</span>
           <a onClick={learn}>
-            <span>Learn Solar</span>
+            <span>Blogs</span>
           </a>
           <a onClick={certificates}>
             <span>Certificates</span>
@@ -137,7 +143,9 @@ const Footer = () => {
 
       <hr className="horizontal-row" />
       <div className="copyright-container">
-        <span className="copyright">©2023LiVolt Energy.All Right Reserved</span>
+        <span className="copyright">
+          ©2024 Livolt Energy.All Right Reserved
+        </span>
       </div>
     </footer>
   );

@@ -30,6 +30,14 @@ const FeaturedProductDetails = ({ cnt }) => {
     (state) => state.newReview
   );
 
+  //formatter for formating the price in indian Number system
+
+  const formatPrice = (price) => {
+    const formatter = new Intl.NumberFormat("en-IN"); // Using 'en-IN' for Indian number formatting
+
+    return `${formatter.format(price)}`;
+  };
+
   const options = {
     size: "large",
     value: products[cnt]?.ratings,
@@ -128,7 +136,7 @@ const FeaturedProductDetails = ({ cnt }) => {
                 </span>
               </div>
               <div className="detailsBlock-3">
-                <h1>{`₹${products[cnt]?.price}`}</h1>
+                <h1>{`₹${formatPrice(products[cnt]?.price)}`}</h1>
                 <div className="detailsBlock-3-1">
                   <div className="detailsBlock-3-1-1">
                     <button onClick={decreaseQuantity}>-</button>

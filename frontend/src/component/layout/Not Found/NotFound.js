@@ -10,6 +10,7 @@ const NotFound = () => {
       <ErrorIcon />
 
       <Typography>Page Not Found </Typography>
+      <Typography>(This Page is Under Maintenance.)</Typography>
       <Link to="/">Home</Link>
     </div>
   );

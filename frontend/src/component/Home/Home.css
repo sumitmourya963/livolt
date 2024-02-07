@@ -234,10 +234,12 @@
     padding: 20px;
     margin: 15px;
     margin-left: 0;
+    pointer-events: none;
   }
   .category-container > img {
     width: 90px;
     height: 90px;
+    
   }
 
   /* Form media Query */

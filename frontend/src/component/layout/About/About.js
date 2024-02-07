@@ -1,10 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./aboutSection.css";
 import Livolt_battery from "../../../images/Livolt_battery.webp";
 import light_bulb from "../../../images/light_bulb.webp";
 import MetaData from "../MetaData";
 
 const About = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Fragment>
       <MetaData title={`About Us | LiVolt`} />

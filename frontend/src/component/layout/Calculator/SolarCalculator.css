@@ -1,6 +1,21 @@
 
+.headline{
+  color: rgba(61, 65, 61, 0.78);
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+
+}
+.subtitile{
+  color: grey;
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
 .background-image-container{
-  background-image: url("../../../images/calculator_background_image.jpeg");
+  background-image: url("../../../images/cal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -13,7 +28,7 @@
   height: 280vh;
   width: 80%;
   z-index: 5;
-  margin-top: -100px;
+  margin-top: -40px;
   background-color: white;
   margin-left: 10%;
   box-shadow: 0 0 20px 2px #bfbcbc;
@@ -34,7 +49,6 @@
 .option-btns{
   display: flex;
   justify-content: space-between;
-
 }
 .option-btn{
   padding:10px 40px;
@@ -107,6 +121,7 @@
   box-shadow: 0 0 20px 2px #bfbcbc;
   text-align: center;
   margin: 10px auto;
+  
 }
 .size{
  justify-self: center;
@@ -114,7 +129,8 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
-  display: flex;
+  position: absolute;
+  margin: 25px 30px;
   flex-direction: column;
 }
 .solar-system-size-para{
@@ -156,19 +172,23 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
+  position: absolute;
+  margin: 56px 33px;
 }
 .coin-img-cont-1{
   display: flex;
   flex-direction: column;
   width: 70px;
-  margin-left:40px ;
+  margin-top: -20px;
+ 
 }
 .coin-img-cont-2{
    display: flex;
    flex-direction: column;
    width: 70px;
-   margin-top: 50px;
-   margin-left: 30px;
+   margin-top: 20px;
+   margin-left:  40px;
+   margin-right: 40px;
 }
 .coin-container{
   display: flex;
@@ -188,14 +208,15 @@
   font-size: large;
   font-weight: 600;
   text-align: center;
-  margin-top: 40px;
- 
+  margin-top: 20px;
  
 }
 .coin-saving>span{
-  color: rgb(217, 179, 26);
+  color: rgba(223, 157, 15, 0.861);
 }
-
+.cal-cont-2{
+  margin: 0 20px;
+}
 
   /* impact on the environment */
   .environment-effect-headline{
@@ -208,12 +229,23 @@
   }
   .enviornment-effect-container > div {
     display: flex;
+    margin-top: 10px;
   }
   
   .enviornment-effect-container > div > img{
     width: 80px;
     height: 70px;
+    margin-right: 20px;
+    
   }
+  .enviornment-effect-container > div > p{
+    color: #627474;
+    margin-top: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
 
 
   /* main div */
@@ -230,12 +262,68 @@
   .calculate-cont > img{
      width: 60px;
      height: 60px;
-     margin: 20px 5px;
+     margin: 15px 5px;
   }
   .benefits-container{
     display: flex;
-    padding: 30px;
+    justify-content: space-between;
+    margin-top: 500px;
   }
+
+
+
+   /* media query code */
+   @media only screen and (max-width: 600px){
+    .calculator-container{
+      width: 90%;  
+      height: 330vh;
+      margin-left: 5%;
+    }
+    .main-calculator-cantainer{
+      padding: 40px  30px;
+      margin-right: 12px;
+    }
+    .option-btns{
+      margin-left: -5px;
+    }
+    .option-btn{
+      font-size: 0.8;
+      padding: 8px 5px;
+      margin: 0 7px;
+      justify-content: space-between;
+    }
+    .select-para{
+      font-size: 0.8rem;
+   }
+  
+   .calculate-btn{
+    font-size: 0.8rem;
+    padding: 15px 106px;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    }
+    .main-div-calculator{
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+    .main-div-solar-system-size,
+    .enviornment-effect-container{
+      width: 300px;
+      height: 250px; 
+      margin: 15px auto;
+      padding: 10px 30px;
+    }
+   .journey-main-container{
+        flex-direction: column;
+        align-items:center
+    }
+    .journey-main-container>div{
+        margin-bottom: 120px;
+    }
+
+   }
   
 
 

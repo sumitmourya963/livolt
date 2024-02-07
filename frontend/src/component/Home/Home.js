@@ -18,11 +18,12 @@ import Form from "./Form.js";
 import axios from "axios";
 import FeaturedProductDetails from "./FeaturedProductDetails.js";
 import Carousel1 from "./Carosel.js";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
+  const { pathname } = useLocation();
   const { loading, error } = useSelector((state) => state.products);
 
   let featuredProductIndex = 0;
@@ -52,12 +53,13 @@ const Home = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
     getAllProducts();
-  }, [dispatch, error, alert]);
+  }, [dispatch, error, alert, pathname]);
 
   return (
     <Fragment>

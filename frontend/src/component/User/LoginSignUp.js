@@ -206,10 +206,6 @@ const LoginSignUp = () => {
                   />
                 </div>
                 <input type="submit" value="Register" className="signUpBtn" />
-                <GoogleLoginButton
-                  onSuccess={handleGoogleLoginSuccess}
-                  onFailure={handleGoogleLoginFailure}
-                />
               </form>
             </div>
           </div>

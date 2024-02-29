@@ -1,6 +1,5 @@
 const express = require("express");
 const passport = require("passport");
-const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
@@ -8,7 +7,6 @@ const fileUpload = require("express-fileupload");
 const path = require("path");
 const compression = require("compression");
 const errorMiddleware = require("./middleware/error");
-const { oAuth2Client } = require("google-auth-library");
 const cors = require("cors");
 const helmet = require("helmet");
 
@@ -25,21 +23,6 @@ app.use(
 app.use(cors());
 
 app.use(helmet({ crossOriginOpenerPolicy: { policy: "same-origin" } }));
-
-app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["self"],
-      scriptSrc: [
-        "self",
-        "https://www.googletagmanager.com/",
-        "https://apis.google.com/js/platform.js",
-        "https://js.stripe.com/v3",
-      ],
-      imgSrc: ["self", "https://res.cloudinary.com/"],
-    },
-  })
-);
 
 app.use(
   express.json({
@@ -75,51 +58,6 @@ app.use(
   fileUpload({
     limits: { fileSize: 50 * 1024 * 1024 },
   })
-);
-
-// Initialize Passport
-app.use(passport.initialize());
-app.use(passport.session());
-
-// Passport Configuration
-passport.use(
-  new GoogleStrategy(
-    {
-      clientID: process.env.GOOGLE_CLIENT_ID_OAUTH,
-      clientSecret: process.env.GOOGLE_SECERET_ID_OAUTH,
-      callbackURL: process.env.GOOGLE_CALLBACK_URL,
-    },
-    (accessToken, refreshToken, profile, done) => {
-      // Custom logic to handle user data after authentication
-      // You can save user data in your database here
-      return done(null, profile);
-    }
-  )
-);
-
-// Serialize user data into the session
-passport.serializeUser((user, done) => {
-  done(null, user);
-});
-
-// Deserialize user data from the session
-passport.deserializeUser((obj, done) => {
-  done(null, obj);
-});
-
-// Passport routes
-app.get(
-  "/auth/google",
-  passport.authenticate("google", { scope: ["profile", "email"] })
-);
-
-app.get(
-  "/auth/google/callback",
-  passport.authenticate("google", { failureRedirect: "/" }),
-  (req, res) => {
-    // Successful authentication, redirect to the home page or any desired route
-    res.redirect("/");
-  }
 );
 
 // Route Imports

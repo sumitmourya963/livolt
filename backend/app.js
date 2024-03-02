@@ -49,6 +49,21 @@ app.use(
 );
 
 app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: [
+        "'self'",
+        "'unsafe-inline'",
+        "https://www.googletagmanager.com/gtag/js?id=G-MPGM2KQZQB",
+      ],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"], // Allow inline styles for development
+      // ... other directives and sources as needed
+    },
+  })
+);
+
+app.use(
   bodyParser.json({
     limit: "50mb",
     parameterLimit: 100000,

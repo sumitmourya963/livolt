@@ -4,7 +4,7 @@ Livolt.in is a web app of Livolt energy company.This web app is built using Mono
 
 ## Demo
 
-"www.livolt.in"
+"www.livoltenergy.com"
 
 ## Environment Variables
 

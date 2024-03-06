@@ -10,7 +10,6 @@ import { clearErrors, login, register } from "../../actions/userAction.js";
 import { useAlert } from "react-alert";
 import { useNavigate } from "react-router-dom";
 import MetaData from "../layout/MetaData";
-import GoogleLoginButton from "./GoogleLoginButton.js";
 
 const LoginSignUp = () => {
   const dispatch = useDispatch();
@@ -20,17 +19,6 @@ const LoginSignUp = () => {
   const { error, loading, isAuthenticated } = useSelector(
     (state) => state.user
   );
-
-  //Google login -----
-  const handleGoogleLoginSuccess = (response) => {
-    // You can send the authentication details to your server for verification
-    console.log("Sending Google login data to the server:", response);
-  };
-
-  const handleGoogleLoginFailure = (error) => {
-    // Handle login failure
-    console.error("Google login---- failed:", error);
-  };
 
   const loginTab = useRef(null);
   const registerTab = useRef(null);
@@ -151,10 +139,6 @@ const LoginSignUp = () => {
                 </div>
                 <Link to="/password/forgot">Forget Password ?</Link>
                 <input type="submit" value="Login" className="loginBtn" />
-                <GoogleLoginButton
-                  onSuccess={handleGoogleLoginSuccess}
-                  onFailure={handleGoogleLoginFailure}
-                />
               </form>
               <form
                 className="signUpForm"

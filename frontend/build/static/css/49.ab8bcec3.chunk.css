@@ -1,0 +1,2 @@
+.ProductDetails1{background-color:#fff;box-sizing:border-box;display:flex;max-width:100%;padding:1vmax;width:100vw}.ProductDetails1>div{align-items:center;border:1px solid #fff;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-evenly;padding:2vmax;width:100%}.ProductDetails1>div:last-child{align-items:flex-start}@media screen and (max-width:600px){.ProductDetails1{flex-direction:column;height:auto}.ProductDetails1>div:last-child{align-items:center}}
+/*# sourceMappingURL=49.ab8bcec3.chunk.css.map*/

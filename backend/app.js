@@ -22,7 +22,22 @@ app.use(
 // setting up cross origin request
 app.use(cors());
 
-app.use(helmet({ crossOriginOpenerPolicy: { policy: "same-origin" } }));
+app.use(
+  helmet.contentSecurityPolicy({
+    useDefaults: true,
+    directives: {
+      scriptSrc: [
+        "'self'",
+        "'unsafe-inline'",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://apis.google.com/js/platform.js",
+        "https://js.stripe.com/v3",
+      ],
+      connectSrc: ["self", "https://www.google-analytics.com"],
+      imgSrc: ["self", "https://res.cloudinary.com", "data:"],
+    },
+  })
+);
 
 app.use(
   express.json({
